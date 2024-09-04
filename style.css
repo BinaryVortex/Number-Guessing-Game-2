@@ -1,0 +1,102 @@
+/* Background Styling */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: url('Number.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    mix-blend-mode: overlay;
+    z-index: -1;
+}
+
+/* Overall Container Styling */
+.game-container {
+    background: rgba(30, 30, 60, 0.75);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: all 0.3s ease;
+}
+
+/* Heading Styling */
+.game-container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffd700;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Instructions and Messages */
+.game-container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Input Field */
+#guess-input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ffd700;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Button Styling */
+.check-btn, .restart-btn, .start-btn {
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.check-btn:hover, .restart-btn:hover, .start-btn:hover {
+    background: linear-gradient(45deg, #ffdd33, #ffaa33);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Progress Bar */
+.progress {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    border-radius: 4px;
+    margin-top: 20px;
+    transform-origin: left;
+}
+
+/* Additional Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
