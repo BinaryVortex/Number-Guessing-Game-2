@@ -1,10 +1,12 @@
 # Number Guessing Game
 
+![Screenshot of Number Guessing Game](./Screenshot%202024-09-04%20180741.png)
+
 A simple, responsive number guessing game built with HTML, CSS, and JavaScript.
 
 **Description**
 
-This project is a lightweight browser game where the player attempts to guess a secret number within a limited number of attempts. The UI gives feedback (too high / too low) and displays the player's score and high score.
+This project is a lightweight browser game where the player attempts to guess a secret number within a limited number of attempts. The UI gives feedback (too high / too low) and displays the player[...] 
 
 
 ## Features
